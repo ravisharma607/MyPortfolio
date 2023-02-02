@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    transition: all 0.5s;
+}
+:root{
+    --color1: #12c2e9;
+    --color2: #c471ed;
+    --color3: #f64f59;
+}
+.skills-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skills-container .box{
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills-container .progress-box{
+    border: 1px solid #6e4fef;
+    border-radius: 4px 18px 18px 4px;
+    width: 90%;
+    height: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.skills-container .progress-box .progress-bar{
+    height: 30px;
+    background-color: #fa4917;
+    border-radius: 1px 10px 10px 1px;
+}
+.skills-container .icons span{
+    font-size: 42px;
+    font-weight: bold;
+}
+.skills-container .icons #html{
+    color: orangered;
+}
+.skills-container .icons #css{
+    color: blue;
+}
+.skills-container .icons #js{
+    background-color: yellow; 
+    color: black;
+}
+.skills-container .icons #react{
+    color: cyan;
+}
+.skills-container .icons #bootstrap{
+    color: blueviolet;
+}
+.skills-container .icons #python{
+    color: rgb(14, 14, 170);
+}
+.title{
+    text-align: center;
+}
+@media screen and (max-width:700px){
+    .skills-container .box{
+        width: 100%;
+    }
+    .skills-container .progress-box{
+        width: 95%;
+        height: 25px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 5px;
+    }
+    .skills-container .progress-box .progress-bar{
+        height: 20px;
+    }
+   
+    .skills-container .icons span{
+        font-size: 32px;
+        margin-right: 5px;
+    } 
+}
